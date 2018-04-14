@@ -5,7 +5,7 @@ body{
     background-image: url("../img/graph-tile.png");
     background-repeat: repeat;
 }
-h1, h2, h3, h4, p{font-family: 'Cormorant Garamond', serif;}
+h1, h2, h3, h4, p, span, a{font-family: 'Cormorant Garamond', serif;}
 header{
     text-align: center;
     margin-bottom: 2em;
@@ -26,7 +26,10 @@ header h1 {
     font-size: 3rem;
 }
 span, a{
-    color:red;
+    color:#ca0a4b;
+}
+.red{
+    color:#ca0a4b
 }
 .card-section{
         border-radius: .5em;
@@ -87,18 +90,59 @@ text-align: justify;}
     rojo: #ba1820;
     font-family: Times New Roman;
 */
-@media screen and (max-width:480px){
+
    
+@media screen and (max-width:1200px){
+    .card-section{
+        margin-top: 1em;
+        min-height: 25rem;
+    }
+   .container{
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+   }
+   .row {
+    margin-left: 14px;
+    margin-right: 14px;
+    }
+   .col-3{
+    width: 50%
+   }
+    .footer-img {
+    width: 100%;
+    /* margin-bottom: 1em; */
+    /* margin: 0 auto; */
+    }
 }
 
-@media screen and (min-width:480px) and (max-width:767px){
-   
-}
-    
-@media screen and (min-width:768px) and (max-width:1023px){
-   
+@media only screen and (max-width:768px){
+
+   .footer-img {
+    width: 100%;
+    /* margin-bottom: 1em; */
+    /* margin: 0 auto; */
+    }
+
+
 }
 
-@media all and (min-width:1024px){
-   
+
+@media only screen and (max-width:480px){
+    .card-section{
+        margin-top: 1em;
+        min-height: 10rem;
+    }
+    .col-3{
+    width: 100%
+   }
+
+}
+@media only screen and (max-width:320px){
+
+    .container{
+    width: 100%;
+    margin-left: 0em;
+    margin-right: 0em;
+   }
 }
